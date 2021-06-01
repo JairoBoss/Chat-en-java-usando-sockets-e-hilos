@@ -26,7 +26,7 @@ public class PnlEnviar extends JPanel{
     
     
     public PnlEnviar(){
-        txtTexto = new JTextField(15);
+        txtTexto = new JTextField(20);
         btnSend = new JButton("Enviar");
         
         btnSend.addActionListener(new ActionListener() {

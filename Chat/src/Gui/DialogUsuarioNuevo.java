@@ -39,13 +39,13 @@ public class DialogUsuarioNuevo extends JDialog {
 
         super(parent, true);
         super.setTitle("Login");
-        super.setSize(340, 200);
+        super.setSize(416, 473);
         panel = new JPanel();
-        panel.setSize(340, 200);
+        panel.setSize(416, 473);
 
         imageIcon = new ImageIcon("src/Imagenes/Login.png");
         lblImage = new JLabel();
-        lblImage.setIcon(new ImageIcon(imageIcon.getImage().getScaledInstance(60, 60, Image.SCALE_SMOOTH)));
+        lblImage.setIcon(new ImageIcon(imageIcon.getImage().getScaledInstance(150, 150, Image.SCALE_SMOOTH)));
         lblImage.setBounds(190, 40, 60, 60);
 
         lblNombre = new JLabel("Ingresa tu nombre");
@@ -63,6 +63,9 @@ public class DialogUsuarioNuevo extends JDialog {
                 DialogUsuarioNuevo.this.setVisible(false);
             }   
         });
+        
+        panel.setBorder(new EmptyBorder(30,100,20,100));
+
 
         panel.setLayout(null);
         panel.add(lblNombre);

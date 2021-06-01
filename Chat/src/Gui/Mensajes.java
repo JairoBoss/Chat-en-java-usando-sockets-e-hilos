@@ -23,7 +23,7 @@ public class Mensajes extends Thread implements Serializable{
     public Mensajes(Socket socket) {
         this.socket = socket;
         textArea = new TextArea();
-        textArea.setSize(300,300);
+        textArea.setSize(190,390);
         textArea.setEditable(false);
         textArea.setText("Welcome");        
         jPanel = new JPanel();

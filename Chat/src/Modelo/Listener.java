@@ -28,12 +28,11 @@ public class Listener extends Thread{
 
     @Override
     public void run() {
-        System.out.println("ESCUCHANDO");
         while (true) {            
             try {
                 in = new ObjectInputStream(socket.getInputStream());                                                
                 String x = (String) in.readObject();
-                System.out.println(usuario + ": " +x);
+                //System.out.println(usuario + ": " +x);
                 cola.addMensaje(usuario + ": " +x);                
             } catch (Exception e) {
                 e.printStackTrace();

@@ -35,7 +35,7 @@ public class Server {
                 String x = (String) in.readObject();
                 while (true) {
                     try {
-                        System.out.println(x + "DENTRO");
+                        //System.out.println(x + "DENTRO");
                         Cliente usuario = new Cliente(x, socket, mensajes);
                         usuarios.add(usuario);
                         usuario.setUsuarios(usuarios);
